@@ -1,0 +1,20 @@
+{
+  "fixture": "09g-duplicate-key",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "reject"
+  ],
+  "expect": {
+    "reject": true,
+    "errors": [
+      {
+        "code": "KEY_DUPLICATE",
+        "type": "character",
+        "key": "c-lin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "fixture": "09e-mime-mismatch",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "assets",
+    "reject"
+  ],
+  "expect": {
+    "reject": false,
+    "errors": [
+      {
+        "code": "MIME_MISMATCH",
+        "scope": "asset",
+        "key": "lin-avatar"
+      }
+    ],
+    "assets": {
+      "embedded": 0,
+      "notCarried": 0,
+      "unresolved": 0,
+      "rejected": 1,
+      "localRefs": 0
+    }
+  },
+  "notes": "只拒这一个素材，不拒整份文件；其余对象照常导入。"
+}

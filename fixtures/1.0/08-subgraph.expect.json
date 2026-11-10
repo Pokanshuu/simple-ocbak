@@ -1,0 +1,46 @@
+{
+  "fixture": "08-subgraph",
+  "protocol": "1.0",
+  "levels": [
+    "L1",
+    "L3"
+  ],
+  "checks": [
+    "scope",
+    "read"
+  ],
+  "expect": {
+    "read": {
+      "worlds": 1,
+      "countries": 1,
+      "characters": 2,
+      "events": 1,
+      "worldEntries": 0,
+      "tags": 3,
+      "periods": 0
+    },
+    "relations": {
+      "edges": 5,
+      "byKind": {
+        "membership": 1,
+        "character": 1,
+        "event-character": 2,
+        "event-country": 1
+      },
+      "unresolved": 0
+    },
+    "assets": {
+      "embedded": 1,
+      "notCarried": 0,
+      "unresolved": 0,
+      "rejected": 0,
+      "localRefs": 0
+    },
+    "unknownFields": {
+      "preserved": 0
+    },
+    "ignored": [],
+    "errors": []
+  },
+  "notes": "闭包自洽：ct-ash 不应出现（只通过 c-veil 可达，而 c-veil 不在闭包内）；en-* 不应出现。"
+}

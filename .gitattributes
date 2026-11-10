@@ -1,0 +1,5 @@
+# 语料库用 sha256 校验原始字节，任何换行转换都会让校验失败，所以固定 LF、禁止自动转换。
+* text=auto eol=lf
+*.ocbak binary
+*.zip binary
+*.png binary

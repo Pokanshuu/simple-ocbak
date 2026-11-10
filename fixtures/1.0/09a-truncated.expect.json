@@ -1,0 +1,18 @@
+{
+  "fixture": "09a-truncated",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "reject"
+  ],
+  "expect": {
+    "reject": true,
+    "errors": [
+      {
+        "code": "PARSE_ERROR"
+      }
+    ]
+  }
+}

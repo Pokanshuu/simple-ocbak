@@ -1,0 +1,18 @@
+{
+  "fixture": "09c-deep",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "limits"
+  ],
+  "expect": {
+    "reject": true,
+    "errors": [
+      {
+        "code": "DEPTH_EXCEEDED"
+      }
+    ]
+  }
+}

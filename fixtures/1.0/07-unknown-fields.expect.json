@@ -1,0 +1,54 @@
+{
+  "fixture": "07-unknown-fields",
+  "protocol": "1.0",
+  "levels": [
+    "L1",
+    "L2"
+  ],
+  "checks": [
+    "preserve"
+  ],
+  "expect": {
+    "read": {
+      "worlds": 1,
+      "countries": 2,
+      "characters": 3,
+      "events": 1,
+      "worldEntries": 2,
+      "tags": 3,
+      "periods": 1
+    },
+    "relations": {
+      "edges": 7,
+      "byKind": {
+        "membership": 1,
+        "character": 1,
+        "event-character": 2,
+        "event-country": 1,
+        "nation": 1,
+        "custom": 1
+      },
+      "unresolved": 0
+    },
+    "assets": {
+      "embedded": 2,
+      "notCarried": 0,
+      "unresolved": 0,
+      "rejected": 0,
+      "localRefs": 0
+    },
+    "unknownFields": {
+      "preserved": 5,
+      "keys": [
+        "c-lin.moodRing",
+        "c-lin.x-pet-skill",
+        "ev-fall.weatherBand",
+        "ct-ember.flagVariant",
+        "en-tree.timelineDensity"
+      ]
+    },
+    "ignored": [],
+    "errors": []
+  },
+  "notes": "L1 允许 preserved < 5，但报告必须出现「未知字段 5 个」；L2 要求 preserved === 5 且往返后再导出仍在。"
+}

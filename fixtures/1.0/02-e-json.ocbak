@@ -1,0 +1,380 @@
+{
+  "version": 2,
+  "exportedAt": "2026-11-10T05:00:00.000Z",
+  "meta": {
+    "app": "OC editor",
+    "format": "oc-editor-backup",
+    "offline": true,
+    "includes": [
+      "worlds",
+      "characters",
+      "events",
+      "countries",
+      "worldEntries",
+      "tags",
+      "maps"
+    ]
+  },
+  "data": {
+    "worlds": [
+      {
+        "id": 1,
+        "name": "余烬",
+        "description": "灰烬之上的世界",
+        "order": 0,
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false
+      }
+    ],
+    "characters": [
+      {
+        "id": 1,
+        "worldId": 1,
+        "name": "林",
+        "aliases": [
+          "Lin"
+        ],
+        "entityKind": "character",
+        "customFields": [
+          {
+            "id": "f1",
+            "label": "口头禅",
+            "value": "灯要亮着"
+          }
+        ],
+        "folderId": null,
+        "hiddenFields": [],
+        "race": "人类",
+        "element": "火",
+        "occupation": "守灯人",
+        "nationalityLegacy": "",
+        "countryId": 1,
+        "height": "168",
+        "birthday": "—",
+        "gender": "",
+        "personality": "寡言",
+        "avatarUrl": "media/lin.png",
+        "headerUrl": "",
+        "bio": "林的一行简介",
+        "lifeStory": "",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "林的正文。"
+                }
+              ]
+            }
+          ]
+        },
+        "relationships": [],
+        "relatedCharacters": [
+          {
+            "characterId": 2,
+            "name": "阿什",
+            "relation": "挚友"
+          }
+        ],
+        "relatedNations": [],
+        "relatedEvents": [],
+        "gallery": [],
+        "avatars": [],
+        "tags": [
+          1,
+          3
+        ],
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      },
+      {
+        "id": 2,
+        "worldId": 1,
+        "name": "阿什",
+        "aliases": [],
+        "entityKind": "pet",
+        "customFields": [],
+        "folderId": null,
+        "hiddenFields": [],
+        "race": "人类",
+        "element": "风",
+        "occupation": "渔人",
+        "nationalityLegacy": "",
+        "countryId": 1,
+        "height": "175",
+        "birthday": "—",
+        "avatarUrl": "media/ash.png",
+        "headerUrl": "",
+        "bio": "",
+        "lifeStory": "",
+        "relationships": [],
+        "relatedCharacters": [],
+        "relatedNations": [],
+        "relatedEvents": [],
+        "gallery": [],
+        "avatars": [],
+        "tags": [
+          2
+        ],
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      },
+      {
+        "id": 3,
+        "worldId": 1,
+        "name": "帷",
+        "aliases": [],
+        "entityKind": "character",
+        "customFields": [],
+        "folderId": null,
+        "hiddenFields": [],
+        "race": "未知",
+        "element": "暗",
+        "occupation": "无",
+        "nationalityLegacy": "",
+        "countryId": 2,
+        "height": "—",
+        "birthday": "—",
+        "avatarUrl": "",
+        "headerUrl": "",
+        "bio": "",
+        "lifeStory": "",
+        "relationships": [
+          {
+            "targetId": 1,
+            "targetType": "character",
+            "relation": "追随"
+          }
+        ],
+        "relatedCharacters": [],
+        "relatedNations": [],
+        "relatedEvents": [],
+        "gallery": [],
+        "avatars": [],
+        "tags": [],
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "worldId": 1,
+        "title": "王朝覆灭",
+        "time": "第一纪 末",
+        "endTime": "第一纪 末",
+        "location": "余烬王都",
+        "summary": "一夜之间",
+        "content": "",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "那一夜，灯灭了。"
+                }
+              ]
+            }
+          ]
+        },
+        "characters": [
+          1,
+          2
+        ],
+        "countries": [
+          1
+        ],
+        "headerUrl": "",
+        "parentEventId": null,
+        "relations": [],
+        "tags": [
+          1
+        ],
+        "images": [],
+        "isMajor": true,
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      }
+    ],
+    "countries": [
+      {
+        "id": 1,
+        "worldId": 1,
+        "name": "余烬王朝",
+        "parentId": null,
+        "description": "旧王朝",
+        "system": "",
+        "geography": "",
+        "culture": "",
+        "flagUrl": "",
+        "headerUrl": "",
+        "characters": [
+          1,
+          2
+        ],
+        "events": [
+          1
+        ],
+        "relatedNations": [],
+        "tags": [
+          1
+        ],
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      },
+      {
+        "id": 2,
+        "worldId": 1,
+        "name": "灰港",
+        "parentId": 1,
+        "description": "海边的港",
+        "system": "",
+        "geography": "",
+        "culture": "",
+        "flagUrl": "",
+        "headerUrl": "",
+        "characters": [
+          3
+        ],
+        "events": [],
+        "relatedNations": [
+          1
+        ],
+        "tags": [],
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      }
+    ],
+    "worldEntries": [
+      {
+        "id": 1,
+        "worldId": 1,
+        "title": "元素与生命树",
+        "content": "",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "元素自树而生。"
+                }
+              ]
+            }
+          ]
+        },
+        "category": "",
+        "parentId": null,
+        "order": 0,
+        "isConcept": true,
+        "references": [],
+        "tags": [
+          3
+        ],
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      },
+      {
+        "id": 2,
+        "worldId": 1,
+        "title": "长明灯",
+        "content": "",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "灯不曾熄。"
+                }
+              ]
+            }
+          ]
+        },
+        "category": "",
+        "parentId": 1,
+        "order": 1,
+        "isConcept": false,
+        "references": [],
+        "tags": [],
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "_syncStatus": "synced",
+        "_lastModified": 1762750800000
+      }
+    ],
+    "tags": [
+      {
+        "id": 1,
+        "name": "火",
+        "category": "",
+        "color": "#C68D44"
+      },
+      {
+        "id": 2,
+        "name": "北方",
+        "category": "",
+        "color": "#6E6A63"
+      },
+      {
+        "id": 3,
+        "name": "传说",
+        "category": "",
+        "color": "#B36651"
+      }
+    ],
+    "maps": [
+      {
+        "id": 1,
+        "worldId": 1,
+        "name": "余烬大陆",
+        "seed": 77001,
+        "params": {
+          "kind": "world",
+          "terrainPreset": "earth",
+          "width": 2048,
+          "height": 1024,
+          "landCoverage": 0.42
+        },
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "deleted": false,
+        "imageBlob": {},
+        "annotations": []
+      }
+    ]
+  }
+}

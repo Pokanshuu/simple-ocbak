@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://simple-ocbak.dev/schema/conformance.schema.json",
+  "title": "一致性报告（CONFORMANCE.json）",
+  "description": "各实现方跑完语料库后产出的报告。两份报告可以直接 diff —— 这是「你说你兼容、我说你不兼容」唯一能当场结案的东西。",
+  "type": "object",
+  "required": ["implementation", "protocol", "suiteSha256", "levels", "checks", "scorecard"],
+  "additionalProperties": false,
+  "properties": {
+    "implementation": {
+      "type": "object",
+      "required": ["app", "version"],
+      "additionalProperties": true,
+      "properties": {
+        "app": { "type": "string" },
+        "version": { "type": "string" },
+        "runtime": { "type": "string", "description": "可选：node / webview / 平台" }
+      }
+    },
+    "protocol": { "type": "string", "description": "本报告依据的协议版本，如 1.0" },
+    "suiteSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "所跑语料的指纹。取 index.json 内全部夹具 sha256 排序后拼接再哈希；两边不一致即表示跑的不是同一份语料"
+    },
+    "levels": {
+      "type": "object",
+      "required": ["L1", "L2", "L3"],
+      "additionalProperties": false,
+      "properties": {
+        "L1": { "$ref": "#/$defs/levelResult" },
+        "L2": { "$ref": "#/$defs/levelResult" },
+        "L3": { "$ref": "#/$defs/levelResult" }
+      },
+      "description": "L2 / L3 只有在 L1 通过后才可能是 pass"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["fixture", "check", "level", "result"],
+        "additionalProperties": false,
+        "properties": {
+          "fixture": { "type": "string" },
+          "check": { "type": "string" },
+          "level": { "enum": ["L1", "L2", "L3"] },
+          "result": { "enum": ["pass", "fail", "skipped", "not-applicable"] },
+          "expected": {},
+          "actual": {},
+          "detail": { "type": "string" },
+          "reason": { "type": "string", "description": "result 非 pass 时必须给出；not-applicable 必须给理由" }
+        }
+      }
+    },
+    "scorecard": {
+      "type": "object",
+      "required": ["pass", "fail", "notApplicable"],
+      "additionalProperties": false,
+      "properties": {
+        "pass": { "type": "integer", "minimum": 0 },
+        "fail": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 },
+        "notApplicable": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "generatedAt": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "levelResult": { "enum": ["pass", "fail", "not-implemented", "not-applicable"] }
+  }
+}

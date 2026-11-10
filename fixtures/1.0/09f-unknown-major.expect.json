@@ -1,0 +1,19 @@
+{
+  "fixture": "09f-unknown-major",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "reject"
+  ],
+  "expect": {
+    "reject": true,
+    "errors": [
+      {
+        "code": "UNKNOWN_MAJOR",
+        "protocol": "2.0"
+      }
+    ]
+  }
+}

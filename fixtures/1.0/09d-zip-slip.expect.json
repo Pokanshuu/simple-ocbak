@@ -1,0 +1,19 @@
+{
+  "fixture": "09d-zip-slip",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "reject"
+  ],
+  "expect": {
+    "reject": true,
+    "errors": [
+      {
+        "code": "ZIP_PATH_ESCAPE",
+        "entry": "../evil.txt"
+      }
+    ]
+  }
+}

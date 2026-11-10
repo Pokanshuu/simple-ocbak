@@ -1,0 +1,294 @@
+{
+  "assets": [
+    {
+      "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+      "height": 1,
+      "key": "cover",
+      "mime": "image/png",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "width": 1
+    },
+    {
+      "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "height": 1,
+      "key": "lin-avatar",
+      "mime": "image/png",
+      "sha256": "c414cd0e204de974f73753c7e28d7638e7b3691bb8b1a2bab6b25bb7fed7ce77",
+      "width": 1
+    }
+  ],
+  "data": {
+    "characters": [
+      {
+        "aliases": [],
+        "bio": "阿什的一行简介",
+        "country": "country:ct-ember",
+        "document": {
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "阿什的正文。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "doc"
+        },
+        "key": "c-ash",
+        "name": "阿什",
+        "tags": [
+          "tag:tag-north"
+        ]
+      },
+      {
+        "aliases": [
+          "Lin"
+        ],
+        "avatar": "asset:lin-avatar",
+        "bio": "林的一行简介",
+        "country": "country:ct-ember",
+        "document": {
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "林的正文。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "doc"
+        },
+        "key": "c-lin",
+        "name": "林",
+        "tags": [
+          "tag:tag-fire",
+          "tag:tag-legend"
+        ]
+      },
+      {
+        "aliases": [],
+        "bio": "帷的一行简介",
+        "country": "country:ct-ash",
+        "document": {
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "帷的正文。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "doc"
+        },
+        "key": "c-veil",
+        "name": "帷",
+        "tags": []
+      }
+    ],
+    "countries": [
+      {
+        "description": "海边的港",
+        "key": "ct-ash",
+        "name": "灰港",
+        "parent": "country:ct-ember",
+        "tags": []
+      },
+      {
+        "description": "旧王朝",
+        "key": "ct-ember",
+        "name": "余烬王朝",
+        "tags": [
+          "tag:tag-fire"
+        ]
+      }
+    ],
+    "events": [
+      {
+        "characters": [
+          "character:c-lin",
+          "character:c-ash"
+        ],
+        "countries": [
+          "country:ct-ember"
+        ],
+        "document": {
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "那一夜，灯灭了。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "doc"
+        },
+        "endTime": "第一纪 末",
+        "key": "ev-fall",
+        "location": "余烬王都",
+        "summary": "一夜之间",
+        "tags": [
+          "tag:tag-fire"
+        ],
+        "time": "第一纪 末",
+        "title": "王朝覆灭"
+      }
+    ],
+    "periods": [
+      {
+        "color": "bg-line",
+        "endTime": "三百年",
+        "key": "pd-first-age",
+        "name": "第一纪",
+        "startTime": "元年"
+      }
+    ],
+    "tags": [
+      {
+        "category": "",
+        "color": "#C68D44",
+        "key": "tag-fire",
+        "name": "火"
+      },
+      {
+        "category": "",
+        "color": "#B36651",
+        "key": "tag-legend",
+        "name": "传说"
+      },
+      {
+        "category": "",
+        "color": "#6E6A63",
+        "key": "tag-north",
+        "name": "北方"
+      }
+    ],
+    "worldEntries": [
+      {
+        "category": "",
+        "document": {
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "灯不曾熄。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "doc"
+        },
+        "key": "en-lantern",
+        "parent": "worldEntry:en-tree",
+        "tags": [],
+        "title": "长明灯"
+      },
+      {
+        "category": "",
+        "document": {
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "元素自树而生。",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "doc"
+        },
+        "key": "en-tree",
+        "tags": [
+          "tag:tag-legend"
+        ],
+        "title": "元素与生命树"
+      }
+    ],
+    "worlds": [
+      {
+        "description": "灰烬之上的世界",
+        "key": "w-ember",
+        "name": "余烬"
+      }
+    ]
+  },
+  "format": "ocbak",
+  "protocol": "1.0",
+  "relations": [
+    {
+      "arrow": "none",
+      "color": "accent-1",
+      "directed": false,
+      "key": "character:c-ash|character|character:c-lin",
+      "kind": "character",
+      "label": "挚友",
+      "source": "character:c-lin",
+      "target": "character:c-ash"
+    },
+    {
+      "directed": false,
+      "key": "character:c-lin|membership|country:ct-ember",
+      "kind": "membership",
+      "label": "属于",
+      "source": "character:c-lin",
+      "target": "country:ct-ember"
+    },
+    {
+      "color": "accent-4",
+      "directed": false,
+      "key": "country:ct-ash|nation|country:ct-ember",
+      "kind": "nation",
+      "label": "关系",
+      "source": "country:ct-ash",
+      "target": "country:ct-ember"
+    },
+    {
+      "directed": true,
+      "key": "event:ev-fall|event-character|character:c-ash",
+      "kind": "event-character",
+      "label": "参与",
+      "source": "event:ev-fall",
+      "target": "character:c-ash"
+    },
+    {
+      "directed": true,
+      "key": "event:ev-fall|event-character|character:c-lin",
+      "kind": "event-character",
+      "label": "参与",
+      "source": "event:ev-fall",
+      "target": "character:c-lin"
+    },
+    {
+      "directed": true,
+      "key": "event:ev-fall|event-country|country:ct-ember",
+      "kind": "event-country",
+      "label": "发生于",
+      "source": "event:ev-fall",
+      "target": "country:ct-ember"
+    },
+    {
+      "arrow": "forward",
+      "directed": true,
+      "key": "worldEntry:en-lantern|custom|worldEntry:en-tree",
+      "kind": "custom",
+      "label": "属于",
+      "source": "worldEntry:en-lantern",
+      "target": "worldEntry:en-tree"
+    }
+  ]
+}

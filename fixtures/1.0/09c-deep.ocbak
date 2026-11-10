@@ -1,0 +1,544 @@
+{
+  "format": "ocbak",
+  "protocol": "1.0",
+  "producer": {
+    "app": "OC Studio",
+    "version": "0.20.3-beta"
+  },
+  "createdAt": "2026-11-10T05:00:00.000Z",
+  "scope": {
+    "kind": "library"
+  },
+  "includes": {
+    "sections": [
+      "worlds",
+      "countries",
+      "characters",
+      "events",
+      "worldEntries",
+      "tags",
+      "periods"
+    ],
+    "assets": "embedded"
+  },
+  "data": {
+    "worlds": [
+      {
+        "key": "w-ember",
+        "name": "余烬",
+        "description": "灰烬之上的世界",
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      }
+    ],
+    "countries": [
+      {
+        "key": "ct-ember",
+        "name": "余烬王朝",
+        "parent": null,
+        "tags": [
+          "tag:tag-fire"
+        ],
+        "description": "旧王朝",
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      },
+      {
+        "key": "ct-ash",
+        "name": "灰港",
+        "parent": "country:ct-ember",
+        "tags": [],
+        "description": "海边的港",
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      }
+    ],
+    "characters": [
+      {
+        "key": "c-lin",
+        "name": "林",
+        "aliases": [
+          "Lin"
+        ],
+        "country": "country:ct-ember",
+        "tags": [
+          "tag:tag-fire",
+          "tag:tag-legend"
+        ],
+        "avatar": "asset:lin-avatar",
+        "bio": "林的一行简介",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "林的正文。"
+                }
+              ]
+            }
+          ]
+        },
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000,
+        "xDeep": {
+          "down": {
+            "down": {
+              "down": {
+                "down": {
+                  "down": {
+                    "down": {
+                      "down": {
+                        "down": {
+                          "down": {
+                            "down": {
+                              "down": {
+                                "down": {
+                                  "down": {
+                                    "down": {
+                                      "down": {
+                                        "down": {
+                                          "down": {
+                                            "down": {
+                                              "down": {
+                                                "down": {
+                                                  "down": {
+                                                    "down": {
+                                                      "down": {
+                                                        "down": {
+                                                          "down": {
+                                                            "down": {
+                                                              "down": {
+                                                                "down": {
+                                                                  "down": {
+                                                                    "down": {
+                                                                      "down": {
+                                                                        "down": {
+                                                                          "down": {
+                                                                            "down": {
+                                                                              "down": {
+                                                                                "down": {
+                                                                                  "down": {
+                                                                                    "down": {
+                                                                                      "down": {
+                                                                                        "down": {
+                                                                                          "down": {
+                                                                                            "down": {
+                                                                                              "down": {
+                                                                                                "down": {
+                                                                                                  "down": {
+                                                                                                    "down": {
+                                                                                                      "down": {
+                                                                                                        "down": {
+                                                                                                          "down": {
+                                                                                                            "down": {
+                                                                                                              "down": {
+                                                                                                                "down": {
+                                                                                                                  "down": {
+                                                                                                                    "down": {
+                                                                                                                      "down": {
+                                                                                                                        "down": {
+                                                                                                                          "down": {
+                                                                                                                            "down": {
+                                                                                                                              "down": {
+                                                                                                                                "down": {
+                                                                                                                                  "down": {
+                                                                                                                                    "down": {
+                                                                                                                                      "down": {
+                                                                                                                                        "down": {
+                                                                                                                                          "down": {
+                                                                                                                                            "down": {
+                                                                                                                                              "down": {
+                                                                                                                                                "down": {
+                                                                                                                                                  "down": {
+                                                                                                                                                    "down": {
+                                                                                                                                                      "down": {
+                                                                                                                                                        "down": {
+                                                                                                                                                          "down": {
+                                                                                                                                                            "down": {
+                                                                                                                                                              "down": {
+                                                                                                                                                                "down": {
+                                                                                                                                                                  "down": {
+                                                                                                                                                                    "down": {
+                                                                                                                                                                      "down": {
+                                                                                                                                                                        "down": {
+                                                                                                                                                                          "down": {
+                                                                                                                                                                            "down": {
+                                                                                                                                                                              "down": {
+                                                                                                                                                                                "down": {
+                                                                                                                                                                                  "down": {
+                                                                                                                                                                                    "down": {
+                                                                                                                                                                                      "down": {
+                                                                                                                                                                                        "down": {
+                                                                                                                                                                                          "down": {
+                                                                                                                                                                                            "down": {
+                                                                                                                                                                                              "down": {
+                                                                                                                                                                                                "down": {
+                                                                                                                                                                                                  "down": {
+                                                                                                                                                                                                    "down": {
+                                                                                                                                                                                                      "down": {
+                                                                                                                                                                                                        "down": {
+                                                                                                                                                                                                          "down": {
+                                                                                                                                                                                                            "down": {
+                                                                                                                                                                                                              "down": {
+                                                                                                                                                                                                                "down": {
+                                                                                                                                                                                                                  "leaf": true
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                              }
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                          }
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                      }
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                }
+                                                                                                                                                                                              }
+                                                                                                                                                                                            }
+                                                                                                                                                                                          }
+                                                                                                                                                                                        }
+                                                                                                                                                                                      }
+                                                                                                                                                                                    }
+                                                                                                                                                                                  }
+                                                                                                                                                                                }
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      }
+                                                                                                                                                                    }
+                                                                                                                                                                  }
+                                                                                                                                                                }
+                                                                                                                                                              }
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "key": "c-ash",
+        "name": "阿什",
+        "aliases": [],
+        "country": "country:ct-ember",
+        "tags": [
+          "tag:tag-north"
+        ],
+        "avatar": null,
+        "bio": "阿什的一行简介",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "阿什的正文。"
+                }
+              ]
+            }
+          ]
+        },
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      },
+      {
+        "key": "c-veil",
+        "name": "帷",
+        "aliases": [],
+        "country": "country:ct-ash",
+        "tags": [],
+        "avatar": null,
+        "bio": "帷的一行简介",
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "帷的正文。"
+                }
+              ]
+            }
+          ]
+        },
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      }
+    ],
+    "events": [
+      {
+        "key": "ev-fall",
+        "title": "王朝覆灭",
+        "time": "第一纪 末",
+        "endTime": "第一纪 末",
+        "location": "余烬王都",
+        "summary": "一夜之间",
+        "characters": [
+          "character:c-lin",
+          "character:c-ash"
+        ],
+        "countries": [
+          "country:ct-ember"
+        ],
+        "tags": [
+          "tag:tag-fire"
+        ],
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "那一夜，灯灭了。"
+                }
+              ]
+            }
+          ]
+        },
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      }
+    ],
+    "worldEntries": [
+      {
+        "key": "en-tree",
+        "title": "元素与生命树",
+        "category": "",
+        "parent": null,
+        "tags": [
+          "tag:tag-legend"
+        ],
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "元素自树而生。"
+                }
+              ]
+            }
+          ]
+        },
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      },
+      {
+        "key": "en-lantern",
+        "title": "长明灯",
+        "category": "",
+        "parent": "worldEntry:en-tree",
+        "tags": [],
+        "document": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "灯不曾熄。"
+                }
+              ]
+            }
+          ]
+        },
+        "createdAt": 1762750800000,
+        "updatedAt": 1762750800000
+      }
+    ],
+    "tags": [
+      {
+        "key": "tag-fire",
+        "name": "火",
+        "category": "",
+        "color": "#C68D44"
+      },
+      {
+        "key": "tag-north",
+        "name": "北方",
+        "category": "",
+        "color": "#6E6A63"
+      },
+      {
+        "key": "tag-legend",
+        "name": "传说",
+        "category": "",
+        "color": "#B36651"
+      }
+    ],
+    "periods": [
+      {
+        "key": "pd-first-age",
+        "name": "第一纪",
+        "startTime": "元年",
+        "endTime": "三百年",
+        "color": "bg-line"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "key": "character:c-lin|membership|country:ct-ember",
+      "source": "character:c-lin",
+      "target": "country:ct-ember",
+      "kind": "membership",
+      "label": "属于",
+      "directed": false
+    },
+    {
+      "key": "character:c-ash|character|character:c-lin",
+      "source": "character:c-lin",
+      "target": "character:c-ash",
+      "kind": "character",
+      "label": "挚友",
+      "directed": false,
+      "color": "accent-1",
+      "arrow": "none"
+    },
+    {
+      "key": "event:ev-fall|event-character|character:c-lin",
+      "source": "event:ev-fall",
+      "target": "character:c-lin",
+      "kind": "event-character",
+      "label": "参与",
+      "directed": true
+    },
+    {
+      "key": "event:ev-fall|event-character|character:c-ash",
+      "source": "event:ev-fall",
+      "target": "character:c-ash",
+      "kind": "event-character",
+      "label": "参与",
+      "directed": true
+    },
+    {
+      "key": "event:ev-fall|event-country|country:ct-ember",
+      "source": "event:ev-fall",
+      "target": "country:ct-ember",
+      "kind": "event-country",
+      "label": "发生于",
+      "directed": true
+    },
+    {
+      "key": "country:ct-ash|nation|country:ct-ember",
+      "source": "country:ct-ash",
+      "target": "country:ct-ember",
+      "kind": "nation",
+      "label": "关系",
+      "directed": false,
+      "color": "accent-4"
+    },
+    {
+      "key": "worldEntry:en-lantern|custom|worldEntry:en-tree",
+      "source": "worldEntry:en-lantern",
+      "target": "worldEntry:en-tree",
+      "kind": "custom",
+      "label": "属于",
+      "directed": true,
+      "arrow": "forward"
+    }
+  ],
+  "assets": [
+    {
+      "key": "lin-avatar",
+      "mime": "image/png",
+      "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "width": 1,
+      "height": 1,
+      "sha256": "c414cd0e204de974f73753c7e28d7638e7b3691bb8b1a2bab6b25bb7fed7ce77"
+    },
+    {
+      "key": "cover",
+      "mime": "image/png",
+      "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+      "width": 1,
+      "height": 1,
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0"
+    }
+  ],
+  "ext": {
+    "ocstudio": {
+      "theme": "paper"
+    }
+  }
+}

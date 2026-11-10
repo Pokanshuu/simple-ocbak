@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://simple-ocbak.dev/schema/expect.schema.json",
+  "title": "夹具期望文件（<fixture>.expect.json）",
+  "description": "一个夹具 + 一份结构化期望。实现方的 runner 读它，比对自家结果。所有计数都是「应当等于」，不是「至少」。",
+  "type": "object",
+  "required": ["fixture", "protocol", "levels", "checks", "expect"],
+  "additionalProperties": false,
+  "properties": {
+    "fixture": { "type": "string", "description": "与 index.json 的 id 一致" },
+    "protocol": { "const": "1.0" },
+    "levels": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "enum": ["L1", "L2", "L3"] },
+      "description": "这份夹具参与哪些等级的判定"
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": ["carrier", "read", "relations", "assets", "scope", "preserve", "roundtrip", "limits", "reject", "legacy-extras", "idempotency"]
+      }
+    },
+    "notes": { "type": "string", "description": "给人看的补充说明，runner 不解析" },
+    "expect": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "object",
+          "description": "该夹具应当被识别成的来源",
+          "additionalProperties": true,
+          "properties": {
+            "format": { "enum": ["legacy", "ocbak"] },
+            "version": { "type": "integer" },
+            "app": { "type": "string" },
+            "carrier": { "enum": ["json", "zip", "folder"] }
+          }
+        },
+        "reject": {
+          "type": "boolean",
+          "description": "true = 整份文件应被拒绝；false / 省略 = 照常导入（错误只作用于单个素材或引用）"
+        },
+        "read": {
+          "type": "object",
+          "description": "各段读到的对象条数。键为段名（characters / events / …）。",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "relations": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "edges": { "type": "integer", "minimum": 0 },
+            "byKind": {
+              "type": "object",
+              "additionalProperties": { "type": "integer", "minimum": 0 },
+              "description": "各 kind 的边数，求和必须等于 edges"
+            },
+            "withColor": { "type": "integer", "minimum": 0 },
+            "withArrow": { "type": "integer", "minimum": 0 },
+            "undirected": { "type": "integer", "minimum": 0 },
+            "unresolved": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "assets": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "embedded": { "type": "integer", "minimum": 0, "description": "有 data，能落地" },
+            "notCarried": { "type": "integer", "minimum": 0, "description": "只有 path，未随文件携带" },
+            "unresolved": { "type": "integer", "minimum": 0, "description": "引用了不存在的 asset key" },
+            "rejected": { "type": "integer", "minimum": 0, "description": "mime 白名单 / 魔数校验被拒" },
+            "localRefs": { "type": "integer", "minimum": 0, "description": "字段里是裸本地路径" }
+          }
+        },
+        "unknownFields": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "preserved": { "type": "integer", "minimum": 0 },
+            "keys": { "type": "array", "items": { "type": "string" }, "description": "形如 characters[0].moodRing 的可定位写法" }
+          }
+        },
+        "ignored": {
+          "type": "array",
+          "description": "读不懂但必须报出来的段 / 键",
+          "items": {
+            "type": "object",
+            "required": ["path", "count"],
+            "additionalProperties": false,
+            "properties": {
+              "path": { "type": "string" },
+              "count": { "type": "integer", "minimum": 0 },
+              "reason": { "type": "string" }
+            }
+          }
+        },
+        "errors": {
+          "type": "array",
+          "description": "只允许 errors.md 里的码",
+          "items": {
+            "type": "object",
+            "required": ["code"],
+            "additionalProperties": true,
+            "properties": {
+              "code": { "type": "string", "pattern": "^[A-Z][A-Z_]+$" },
+              "scope": { "enum": ["file", "asset", "ref"] },
+              "path": { "type": "string" },
+              "key": { "type": "string" },
+              "protocol": { "type": "string" },
+              "entry": { "type": "string" },
+              "detail": { "type": "string" }
+            }
+          }
+        },
+        "idempotency": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "secondImportAdded": { "type": "integer", "minimum": 0, "description": "同一文件第二次以 skip 导入时应为 0" }
+          }
+        }
+      }
+    }
+  }
+}

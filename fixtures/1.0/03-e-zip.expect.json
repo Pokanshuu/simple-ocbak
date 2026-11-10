@@ -1,0 +1,58 @@
+{
+  "fixture": "03-e-zip",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "carrier",
+    "read"
+  ],
+  "expect": {
+    "source": {
+      "format": "legacy",
+      "version": 2,
+      "app": "OC editor",
+      "carrier": "zip"
+    },
+    "read": {
+      "worlds": 1,
+      "countries": 2,
+      "characters": 3,
+      "events": 1,
+      "worldEntries": 2,
+      "tags": 3,
+      "periods": 0
+    },
+    "relations": {
+      "edges": 7,
+      "byKind": {
+        "membership": 2,
+        "character": 1,
+        "event-character": 2,
+        "event-country": 1,
+        "nation": 1
+      },
+      "unresolved": 0
+    },
+    "assets": {
+      "embedded": 0,
+      "notCarried": 0,
+      "unresolved": 0,
+      "rejected": 0,
+      "localRefs": 2
+    },
+    "unknownFields": {
+      "preserved": 0
+    },
+    "ignored": [
+      {
+        "path": "data.maps",
+        "count": 1,
+        "reason": "地图模型不同，需进 ext"
+      }
+    ],
+    "errors": []
+  },
+  "notes": "ZIP 内没有 ocbak.json，须回落到 oc-data.json；manifest.json / README.txt 不得作为判据。"
+}

@@ -1,0 +1,50 @@
+{
+  "fixture": "06-relations",
+  "protocol": "1.0",
+  "levels": [
+    "L1",
+    "L2"
+  ],
+  "checks": [
+    "relations",
+    "roundtrip"
+  ],
+  "expect": {
+    "read": {
+      "worlds": 1,
+      "countries": 2,
+      "characters": 3,
+      "events": 1,
+      "worldEntries": 2,
+      "tags": 3,
+      "periods": 1
+    },
+    "relations": {
+      "edges": 7,
+      "byKind": {
+        "membership": 1,
+        "character": 1,
+        "event-character": 2,
+        "event-country": 1,
+        "nation": 1,
+        "custom": 1
+      },
+      "withColor": 2,
+      "withArrow": 2,
+      "undirected": 3,
+      "unresolved": 0
+    },
+    "assets": {
+      "embedded": 2,
+      "notCarried": 0,
+      "unresolved": 0,
+      "rejected": 0,
+      "localRefs": 0
+    },
+    "unknownFields": {
+      "preserved": 0
+    },
+    "ignored": [],
+    "errors": []
+  }
+}

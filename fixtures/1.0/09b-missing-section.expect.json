@@ -1,0 +1,19 @@
+{
+  "fixture": "09b-missing-section",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "reject"
+  ],
+  "expect": {
+    "reject": true,
+    "errors": [
+      {
+        "code": "MISSING_SECTION",
+        "path": "data.events"
+      }
+    ]
+  }
+}

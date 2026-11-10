@@ -1,0 +1,46 @@
+{
+  "fixture": "05-assets",
+  "protocol": "1.0",
+  "levels": [
+    "L1"
+  ],
+  "checks": [
+    "assets"
+  ],
+  "expect": {
+    "read": {
+      "worlds": 1,
+      "countries": 2,
+      "characters": 3,
+      "events": 1,
+      "worldEntries": 2,
+      "tags": 3,
+      "periods": 1
+    },
+    "relations": {
+      "edges": 7,
+      "byKind": {
+        "membership": 1,
+        "character": 1,
+        "event-character": 2,
+        "event-country": 1,
+        "nation": 1,
+        "custom": 1
+      },
+      "unresolved": 0
+    },
+    "assets": {
+      "embedded": 1,
+      "notCarried": 1,
+      "unresolved": 1,
+      "rejected": 0,
+      "localRefs": 1
+    },
+    "unknownFields": {
+      "preserved": 0
+    },
+    "ignored": [],
+    "errors": []
+  },
+  "notes": "includes.assets 声明 embedded，但其中一项只有 path —— 必须报 notCarried，不得当成功。"
+}

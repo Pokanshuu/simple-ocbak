@@ -1,0 +1,171 @@
+{
+  "protocol": "1.0",
+  "generatedAt": "2026-11-10T05:00:00.000Z",
+  "note": "夹具由 tools/build-fixtures.mjs 生成，不要手改。sha256 用于两边核对「跑的是不是同一份语料」。",
+  "fixtures": [
+    {
+      "id": "01-s-json",
+      "file": "01-s-json.ocbak",
+      "expect": "01-s-json.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "9772521a021f6ca3682edac8f3c307df88f5f4f76e3cee540f0481dcea784efc",
+      "expectSha256": "7bbb3522f29d93676b4fd33f8ab31532c09941d66b5cf3e77c9da6a01fb830f9"
+    },
+    {
+      "id": "02-e-json",
+      "file": "02-e-json.ocbak",
+      "expect": "02-e-json.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "f5fd529f319abf6160bf61726dff42a8c326cec79726dfb74d4e25bccb24f5b3",
+      "expectSha256": "9f7e3c32e16b312de8940ded5647e19bb4f186e6b989f59f5074cf3202d80a83"
+    },
+    {
+      "id": "03-e-zip",
+      "file": "03-e-zip.ocbak",
+      "expect": "03-e-zip.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "147573e94b3e63d242f149724c19bbe3ed40fdf9e58c82f80492fdfd64710b62",
+      "expectSha256": "8156550aec1b1dde2427cb9b567c772aa4d0c768595f8539214bdaf2d20e70a2"
+    },
+    {
+      "id": "04-canonical",
+      "file": "04-canonical.ocbak",
+      "expect": "04-canonical.expect.json",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "sha256": "aaf34d04d4b37bd8c24254483bc17752795d7ffa0bdabdc7a0e514f491a6cfa0",
+      "expectSha256": "4f5e42d7ca9d4af485d02af4d9102e9323c77ae2a5079d7269f1bb85f80424ca"
+    },
+    {
+      "id": "05-assets",
+      "file": "05-assets.ocbak",
+      "expect": "05-assets.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "7a07c669b4dfbf9cf512ca16539c674f716bedbc86b3e3144c5ee928d82c6f2b",
+      "expectSha256": "7d978fc53da4b99608b30ab6afb026dd8aa9e90b903309135cea763964737191"
+    },
+    {
+      "id": "06-relations",
+      "file": "06-relations.ocbak",
+      "expect": "06-relations.expect.json",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "sha256": "9a2a3805942652bbe1309fd20fe6cd92d6d6a75138d9bdb4c08a1524fa274904",
+      "expectSha256": "7e4cae14a0225bff2dc0da5ae83c08b225a48cdb450e301c6c5fe5c249369edc"
+    },
+    {
+      "id": "07-unknown-fields",
+      "file": "07-unknown-fields.ocbak",
+      "expect": "07-unknown-fields.expect.json",
+      "levels": [
+        "L1",
+        "L2"
+      ],
+      "sha256": "1641eceb8ae7f0e6c0c0a43dc28ff7b038f6a04ad95f7d078f65e8d96ed6c421",
+      "expectSha256": "978547cef82c85e476a30f1fb3829e70f434d88b83b40a7e176bccdf50810089"
+    },
+    {
+      "id": "08-subgraph",
+      "file": "08-subgraph.ocbak",
+      "expect": "08-subgraph.expect.json",
+      "levels": [
+        "L1",
+        "L3"
+      ],
+      "sha256": "2b0770a70f595381f8314b8c7d39b06da4755def9edf04352c0df623f9502cf0",
+      "expectSha256": "2647045eb236d714932e4b4317ab58d30f877fb9c2a28618023b2e61246eff9a"
+    },
+    {
+      "id": "09a-truncated",
+      "file": "09a-truncated.ocbak",
+      "expect": "09a-truncated.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "3e21e323bba31a90ed6be8980e08fef3967436eb0094e60c121a89c18e86eb52",
+      "expectSha256": "0a6864f2e7f487616f053c2c51fa7e97b4405b894a62120aa8dbfee4ccfe7a98"
+    },
+    {
+      "id": "09b-missing-section",
+      "file": "09b-missing-section.ocbak",
+      "expect": "09b-missing-section.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "d572466ab4ac177a795337066a8e7513aa478bb41db9021e00e28b64053361f7",
+      "expectSha256": "652af1ea332669dc71f97cbe7ed9bcb1dc29ac2aff31a1c76b0f70065b95751d"
+    },
+    {
+      "id": "09c-deep",
+      "file": "09c-deep.ocbak",
+      "expect": "09c-deep.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "c41991cc8acb7f766387d6af823a08159969edca85587d2bc566e16d46ef07a5",
+      "expectSha256": "bbdcb21ed2b55a74ffe3f53d0baec3403945940185810f3d52ef669796fc3d6f"
+    },
+    {
+      "id": "09d-zip-slip",
+      "file": "09d-zip-slip.ocbak",
+      "expect": "09d-zip-slip.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "69abc0ddfd1beb2ad210192f91f9dbf76c85abfb10cf8f8ea0cc1a43e60353de",
+      "expectSha256": "f11a84e666c9733f3809acc679f6dd3f1ddbfab3e2906ba6064911d54d37ee83"
+    },
+    {
+      "id": "09e-mime-mismatch",
+      "file": "09e-mime-mismatch.ocbak",
+      "expect": "09e-mime-mismatch.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "886e2be370e3f54b92d1657914d23f197e436c4b2e2bd3c9d09b6d22a5773910",
+      "expectSha256": "c833b31756f6c0092179d88a81ef6fbbffae3d074869e42a6174a63e98c7e49d"
+    },
+    {
+      "id": "09f-unknown-major",
+      "file": "09f-unknown-major.ocbak",
+      "expect": "09f-unknown-major.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "96feaf9cb4aa2847662f18dfff6a255af3d86cce5643d15e3618c7e8672da68c",
+      "expectSha256": "562877e2caf14080681006d84d52798940cbbba6f8a12e793f1f36abf5d8445a"
+    },
+    {
+      "id": "09g-duplicate-key",
+      "file": "09g-duplicate-key.ocbak",
+      "expect": "09g-duplicate-key.expect.json",
+      "levels": [
+        "L1"
+      ],
+      "sha256": "78c8dd999ae3394c0cd81e9f349d1a2d256c9133e211c77d53e8512a54968e0a",
+      "expectSha256": "14008538a04484272860e1f1b7cbe82cd7999d762c9c8f3a1ae9dd07a1bae40d"
+    }
+  ],
+  "canonical": [
+    {
+      "id": "04-canonical",
+      "file": "expected/canon-04-canonical.json"
+    },
+    {
+      "id": "06-relations",
+      "file": "expected/canon-06-relations.json"
+    }
+  ]
+}
